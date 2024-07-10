@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Juego">
+
+    <FrameLayout
+        android:id="@+id/frameLayout5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/juego" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_tiempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="450dp"
+        android:layout_marginTop="100dp"
+        android:text="Tiempo: 40s"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout5"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout5" />
+
+    <ImageView
+        android:id="@+id/iv_uno"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="505dp"
+        android:layout_marginTop="430dp"
+        android:tag="uno"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout5"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout5"
+        app:srcCompat="@drawable/uno" />
+
+    <ImageView
+        android:id="@+id/iv_dos"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="430dp"
+        android:tag="dos"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout5"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout5"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout5"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout5"
+        app:srcCompat="@drawable/dos" />
+
+    <ImageView
+        android:id="@+id/iv_tres"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="430dp"
+        android:layout_marginEnd="174dp"
+        android:tag="tres"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout5"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout5"
+        app:srcCompat="@drawable/tres" />
+
+    <ImageView
+        android:id="@+id/iv_cuatro"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="510dp"
+        android:layout_marginEnd="510dp"
+        android:layout_marginBottom="80dp"
+        android:tag="cuatro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout5"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cuatro" />
+
+    <ImageView
+        android:id="@+id/iv_cinco"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="505dp"
+        android:layout_marginTop="90dp"
+        android:tag="cinco"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout5"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout5"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cinco" />
+
+    <ImageView
+        android:id="@+id/iv_seis"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="90dp"
+        android:tag="seis"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout5"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout5"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout5"
+        app:srcCompat="@drawable/seis" />
+
+    <ImageView
+        android:id="@+id/iv_siete"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="174dp"
+        android:tag="siete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout5"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout5"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout5"
+        app:srcCompat="@drawable/siete" />
+
+    <ImageView
+        android:id="@+id/iv_ocho"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="510dp"
+        android:tag="ocho"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ocho" />
+
+    <ImageView
+        android:id="@+id/iv_nueve"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="505dp"
+        android:layout_marginBottom="250dp"
+        android:tag="nueve"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout5"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout5"
+        app:srcCompat="@drawable/nueve" />
+
+    <ImageView
+        android:id="@+id/iv_diez"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginBottom="250dp"
+        android:tag="diez"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout5"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout5"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout5"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout5"
+        app:srcCompat="@drawable/diez" />
+
+    <ImageView
+        android:id="@+id/iv_once"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginEnd="174dp"
+        android:layout_marginBottom="250dp"
+        android:tag="once"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout5"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout5"
+        app:srcCompat="@drawable/once" />
+
+    <ImageView
+        android:id="@+id/iv_doce"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginEnd="510dp"
+        android:layout_marginBottom="250dp"
+        android:tag="doce"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout5"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout5"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout5"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout5"
+        app:srcCompat="@drawable/doce" />
+
+    <ImageView
+        android:id="@+id/iv_trece"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="505dp"
+        android:layout_marginBottom="590dp"
+        android:tag="trece"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout5"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout5"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout5"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout5"
+        app:srcCompat="@drawable/trece" />
+
+    <ImageView
+        android:id="@+id/iv_catorce"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginBottom="590dp"
+        android:tag="catorce"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout5"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout5"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout5"
+        app:srcCompat="@drawable/catorce" />
+
+    <ImageView
+        android:id="@+id/iv_quince"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginEnd="174dp"
+        android:layout_marginBottom="590dp"
+        android:tag="quince"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout5"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout5"
+        app:srcCompat="@drawable/quince" />
+
+    <ImageView
+        android:id="@+id/iv_dieciseis"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginEnd="510dp"
+        android:layout_marginBottom="590dp"
+        android:tag="dieciseis"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout5"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout5"
+        app:srcCompat="@drawable/dieciseis" />
+
+    <ImageView
+        android:id="@+id/iv_unoBajo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="725dp"
+        android:layout_marginEnd="650dp"
+        android:tag="uno"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout5"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout5"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout5"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout5"
+        app:srcCompat="@drawable/uno" />
+
+    <ImageView
+        android:id="@+id/iv_dosBajo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="650dp"
+        android:layout_marginTop="725dp"
+        android:tag="dos"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout5"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout5"
+        app:srcCompat="@drawable/dos" />
+
+    <ImageView
+        android:id="@+id/iv_tresBajo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="1125dp"
+        android:layout_marginEnd="650dp"
+        android:tag="tres"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tres" />
+
+    <ImageView
+        android:id="@+id/iv_cuatroBajo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="650dp"
+        android:layout_marginTop="1125dp"
+        android:tag="cuatro"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout5"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout5"
+        app:srcCompat="@drawable/cuatro" />
+
+    <ImageView
+        android:id="@+id/iv_cincoBajo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="925dp"
+        android:layout_marginEnd="650dp"
+        android:tag="cinco"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cinco" />
+
+    <ImageView
+        android:id="@+id/iv_seisBajo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="650dp"
+        android:layout_marginTop="925dp"
+        android:tag="seis"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout5"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout5"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout5"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout5"
+        app:srcCompat="@drawable/seis" />
+
+    <ImageView
+        android:id="@+id/iv_sieteBajo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="725dp"
+        android:layout_marginEnd="400dp"
+        android:tag="siete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout5"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout5"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout5"
+        app:srcCompat="@drawable/siete" />
+
+    <ImageView
+        android:id="@+id/iv_ochoBajo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="400dp"
+        android:layout_marginTop="725dp"
+        android:tag="ocho"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout5"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout5"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout5"
+        app:srcCompat="@drawable/ocho" />
+
+    <ImageView
+        android:id="@+id/iv_nueveBajo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="1125dp"
+        android:layout_marginEnd="400dp"
+        android:tag="nueve"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout5"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout5"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout5"
+        app:srcCompat="@drawable/nueve" />
+
+    <ImageView
+        android:id="@+id/iv_diezBajo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="400dp"
+        android:layout_marginTop="1125dp"
+        android:tag="diez"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout5"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/diez" />
+
+    <ImageView
+        android:id="@+id/iv_onceBajo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="925dp"
+        android:layout_marginEnd="400dp"
+        android:tag="once"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout5"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout5"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout5"
+        app:srcCompat="@drawable/once" />
+
+    <ImageView
+        android:id="@+id/iv_doceBajo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="400dp"
+        android:layout_marginTop="925dp"
+        android:tag="doce"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/doce" />
+
+    <ImageView
+        android:id="@+id/iv_treceBajo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="775dp"
+        android:layout_marginEnd="150dp"
+        android:tag="trece"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout5"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout5"
+        app:srcCompat="@drawable/trece" />
+
+    <ImageView
+        android:id="@+id/iv_catorceBajo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="1075dp"
+        android:layout_marginEnd="150dp"
+        android:tag="catorce"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout5"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout5"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout5"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout5"
+        app:srcCompat="@drawable/catorce" />
+
+    <ImageView
+        android:id="@+id/iv_quinceBajo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="775dp"
+        android:tag="quince"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout5"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/quince" />
+
+    <ImageView
+        android:id="@+id/iv_dieciseisBajo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="1075dp"
+        android:tag="dieciseis"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dieciseis" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
